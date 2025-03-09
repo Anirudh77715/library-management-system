@@ -1,0 +1,33 @@
+modules = ["cpp"]
+
+[nix]
+channel = "stable-24_05"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "library_system"
+
+[[workflows.workflow]]
+name = "library_system"
+author = "agent"
+
+[workflows.workflow.metadata]
+agentRequireRestartOnSave = false
+
+[[workflows.workflow.tasks]]
+task = "packager.installForAll"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "mkdir -p data && cp -f attached_assets/books.txt attached_assets/users.txt attached_assets/transactions.txt data/ && cp attached_assets/*.cpp attached_assets/*.hpp . && make && ./library_system"
+
+[deployment]
+run = ["sh", "-c", "mkdir -p data && cp attached_assets/*.txt data/ && g++ -std=c++17 attached_assets/account.cpp attached_assets/book.cpp attached_assets/library.cpp attached_assets/main.cpp attached_assets/user.cpp attached_assets/utils.cpp -o main && ./main"]

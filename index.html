@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/xterm@4.19.0/lib/xterm.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xterm-addon-fit@0.5.0/lib/xterm-addon-fit.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xterm@4.19.0/css/xterm.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="4" y="3" width="16" height="18" rx="2" stroke="#00B8D9" stroke-width="2"/>
+                    <line x1="9" y1="7" x2="15" y2="7" stroke="#00B8D9" stroke-width="2"/>
+                    <line x1="9" y1="11" x2="15" y2="11" stroke="#00B8D9" stroke-width="2"/>
+                    <line x1="9" y1="15" x2="15" y2="15" stroke="#00B8D9" stroke-width="2"/>
+                </svg>
+                <h1>Library Management System</h1>
+            </div>
+            <div class="status">
+                <span id="status-indicator">Disconnected</span>
+            </div>
+        </header>
+        <main>
+            <div class="sidebar">
+                <div class="help-section">
+                    <h2>Quick Help</h2>
+                    <div class="help-content">
+                        <h3>Login Credentials</h3>
+                        <div class="credentials">
+                            <div class="credential">
+                                <strong>Student:</strong><br>
+                                Email: john@example.com<br>
+                                Password: pass123
+                            </div>
+                            <div class="credential">
+                                <strong>Faculty:</strong><br>
+                                Email: wilson@example.com<br>
+                                Password: pass987
+                            </div>
+                            <div class="credential">
+                                <strong>Librarian:</strong><br>
+                                Email: admin@library.com<br>
+                                Password: admin123
+                            </div>
+                        </div>
+                        <h3>User Roles</h3>
+                        <ul>
+                            <li><strong>Students:</strong> Can borrow up to 3 books for 15 days</li>
+                            <li><strong>Faculty:</strong> Can borrow up to 5 books for 30 days</li>
+                            <li><strong>Librarian:</strong> Can manage books and users</li>
+                        </ul>
+                        <h3>Commands</h3>
+                        <p>Follow the on-screen menu options to navigate the system.</p>
+                    </div>
+                </div>
+                <div class="features">
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Role-based access control</li>
+                        <li>Book borrowing and returning</li>
+                        <li>Fine calculation for overdue books</li>
+                        <li>Book search functionality</li>
+                        <li>User management</li>
+                        <li>Persistent data storage</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="terminal-container">
+                <div id="terminal"></div>
+                <div class="controls">
+                    <button id="clear-btn">Clear Terminal</button>
+                    <button id="restart-btn">Restart Application</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Library Management System &copy; 2023 - OOP C++ Implementation</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

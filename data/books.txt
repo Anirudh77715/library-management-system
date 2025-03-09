@@ -1,0 +1,10 @@
+A1B2C3D4|The Great Gatsby|F. Scott Fitzgerald|Scribner|1925|978-0743273565|0
+E5F6G7H8|To Kill a Mockingbird|Harper Lee|Grand Central|1960|978-0446310789|0
+I9J0K1L2|1984|George Orwell|Penguin|1949|978-0451524935|0
+M3N4O5P6|Pride and Prejudice|Jane Austen|Penguin|1813|978-0141439518|0
+Q7R8S9T0|The Catcher in the Rye|J.D. Salinger|Little, Brown|1951|978-0316769488|0
+HWMUT1VF|Lord of the Rings|J.R.R. Tolkien|Mariner Books|1954|978-0544003415|1
+9XKKHGTD|The Hobbit|J.R.R. Tolkien|Mariner Books|1937|978-0547928227|0
+I8DMOJD5|The Da Vinci Code|Dan Brown|Anchor|2003|978-0307474278|0
+AMDXSC1L|Harry Potter|J.K. Rowling|Scholastic|1997|978-0590353427|0
+EBZ0CVSZ|The Alchemist|Paulo Coelho|HarperOne|1988|978-0062315007|1
